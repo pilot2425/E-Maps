@@ -5,6 +5,8 @@ body
     background-color: #a0e9a0;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
+    margin: 2%;
+    font-size: medium;
 }
 
 .main
@@ -147,18 +149,87 @@ h5
     cursor: pointer;
 }
 
-@media (max-width: 320px) 
-{
+.mostrar{
+    margin-top: 0px;
+}
+.navbar{
+    margin:0 8px;
+    margin-top: 0px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    margin-left: 8px;
 
 }
-
-@media (min-width: 321px) and (max-width: 375px) 
-{
-
+.navbar img{
+    width:80px;
+    height:80px;
+}
+.navbar-light {
+	color: rgb(94, 92, 92);
+	font-size: large;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+}
+.nav-item{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: .1em;
+    width: max-content; /* Para que quepa todo el contenido en una linea*/
+}
+/* FORMULARIO DE CONTACTO*/
+.row button{
+    background-color: #ffffff !important;
+    color: rgb(7, 7, 7) !important;
+    border-color:#b3fcac;
+} /* Cambiar el color del boton de envio */
+form{
+    margin-top: 30px !important;
+    border: 1px solid #fdfdfd;
+} 
+#formulario{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+.form-label{
+    margin-top: 1%;
+    font-size: x-large;
+}
+#boton{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-@media (min-width: 376px) and (max-width: 991.98px) 
-{
 
-    
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .sml{
+        margin-left: auto; 
+        margin-right: auto;
+    } /* Cambio en el logo del navbar para mejor efecto visual de este */
+    .nav-item{
+        width: 100%;
+    }
+    h4{
+        font-size: large !important;
+    }
+}
+
+/* Small devices (landscape phones, entre 576px y 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .sml{
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    #mapa{
+        display: inline-block;
+    }
 }
