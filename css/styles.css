@@ -256,6 +256,10 @@ h5
 .pattern{
   background-color:#80e46b !important
 }
+
+.sepCustom1{
+  padding-top: 25px !important;
+}
 .customTD {
   text-align: center !important;
   padding: 0 15px !important;
