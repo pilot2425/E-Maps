@@ -258,7 +258,7 @@ h5
 }
 .customTD {
   text-align: center !important;
-  padding: 0 15px;
+  padding: 0 15px !important;
 }
 
 .boton{
