@@ -9,7 +9,7 @@ body
     font-size: medium;
 }
 
-/*Test*/
+/*Carousel*/
 .owl-1 .owl-nav {
   width: 100%;
   position: absolute;
@@ -58,14 +58,7 @@ body
     .owl-1 .owl-dots .owl-dot:active, .owl-1 .owl-dots .owl-dot:focus {
       outline: none; }
 
-
-
-
-
-
-
-
-/*Test*/
+/*Carousel*/
 
 
 
@@ -297,7 +290,7 @@ h5
 
 
 
-/*Añadir vehículo*/
+/*Añadir/Modificar vehículo*/
 
 #formmake, #formmodel, #formcharger {
   background-color:#80e46b;
@@ -360,4 +353,4 @@ h5
               0 1px 1px 0 rgba(0,0,0,0.09);
 }
 
-/*Añadir vehiculo*/
+/*Añadir/Modificar vehiculo*/
