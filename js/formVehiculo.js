@@ -102,6 +102,7 @@ chargers["Tipo 2"] = new Array()
 chargers["Tipo 3"] = new Array()
 chargers["CCS"] = new Array()
 chargers["ChaDeMo"] = new Array()
+chargers["V2G"] = new Array()
 
 
 jQuery(document).ready(function ($) {
