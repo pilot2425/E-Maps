@@ -127,6 +127,12 @@ h5
     height: 300px;
 }
 
+.centro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo
 {
     width: 250px;
