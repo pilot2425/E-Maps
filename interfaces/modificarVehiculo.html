@@ -44,7 +44,7 @@
       <div class="row">
         <h1>Modificar Vehículo</h1>
       </div>
-      <div class="row">
+      <div class="row customH4">
         <h4>Modifique los datos de su vehículo:</h4>
       </div>
 
@@ -53,22 +53,24 @@
           <div id="form-wrapper">
 
             <fieldset>
-              <table>
-                <div id="vehicle" class="selectdiv">
-                  <tr id="linea">
-                    <td colspan="4" class="customTD">
-                      <select name="make" id="formmake">
-                        <option value="" selected="selected">Marca</option></select>
-                      </td>
+              <table class="modTable">
+                <tbody class="modtBody">
+                  <div id="vehicle" class="selectdiv">
+                    <tr id="linea">
                       <td colspan="4" class="customTD">
-                        <select name="model" id="formmodel">
-                          <option value="" selected="selected">Modelo</option></select>
+                        <select name="make" id="formmake">
+                          <option value="" selected="selected">Marca</option></select>
                         </td>
                         <td colspan="4" class="customTD">
-                          <select name="charger" id="formcharger">
-                            <option value="" selected="selected">Tipo de cargador</option></select>
+                          <select name="model" id="formmodel">
+                            <option value="" selected="selected">Modelo</option></select>
                           </td>
-                        </tr>
+                          <td colspan="4" class="customTD">
+                            <select name="charger" id="formcharger">
+                              <option value="" selected="selected">Tipo de cargador</option></select>
+                            </td>
+                          </tr>
+                        </tbody>
                       </table>
                     </fieldset>
                   </div>

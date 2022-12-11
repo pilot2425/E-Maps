@@ -275,6 +275,30 @@ h5
     h4{
         font-size: large !important;
     }
+
+    /*Añadir/Modificar vehículo*/
+    .modTable {
+      display: flex;
+      align-items: left;
+      justify-content: left;
+
+    }
+    .modtBody {
+      display: flex;
+      flex-direction: row;
+    }
+    #linea {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .customTD{
+      padding-top: 5px;
+    }
+    .customH4{
+      width: 75%;
+    }
+    /*Añadir/Modificar vehículo*/
 }
 
 /* Small devices (landscape phones, entre 576px y 767.98px) */
@@ -286,7 +310,30 @@ h5
     #mapa{
         display: inline-block;
     }
-}
+    /*Añadir/Modificar vehículo*/
+    .modTable {
+      display: flex;
+      align-items: left;
+      justify-content: left;
+
+    }
+    .modtBody {
+      display: flex;
+      flex-direction: row;
+    }
+    #linea {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .customTD{
+      padding-top: 5px;
+    }
+    .customH4{
+      width: 75%;
+    }
+    /*Añadir/Modificar vehículo*/
+  }
 
 
 
@@ -316,7 +363,6 @@ h5
 }
 .customTD {
   text-align: center !important;
-  padding: 0 15px !important;
 }
 
 .boton{

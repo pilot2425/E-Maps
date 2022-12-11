@@ -13,38 +13,38 @@
 
 <body>
   <section class = "mostrar" >
-      <nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar">
-          <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto ">
-                      <li class="nav-item"><a class="nav-link " aria-current = "page" href="../index.html">Inicio</a></li>
-                      <li class="nav-item"><a class="nav-link" aria-current = "page" href="../interfaces/MostrarCargadores.html">Mostrar Cargadores</a></li>
-                      <li class="nav-item"><a class="nav-link" aria-current = "page" href="../interfaces/planificarRuta.html">Planificar Ruta</a></li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Garaje
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="../interfaces/anadirVehiculo.html">Añadir</a></li>
-                              <li><a class="dropdown-item" href="../interfaces/modificarVehiculo.html">Modificar</a></li>
-                              <li><a class="dropdown-item" href="../interfaces/verGaraje.html">Ver Garaje</a></li>
-                          </ul>
-                          </li>
-                  </ul>
-              </div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item"><a class="nav-link " aria-current = "page" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current = "page" href="../interfaces/MostrarCargadores.html">Mostrar Cargadores</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current = "page" href="../interfaces/planificarRuta.html">Planificar Ruta</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Garaje
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="../interfaces/anadirVehiculo.html">Añadir</a></li>
+                <li><a class="dropdown-item" href="../interfaces/modificarVehiculo.html">Modificar</a></li>
+                <li><a class="dropdown-item" href="../interfaces/verGaraje.html">Ver Garaje</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-          </div>
-      </nav>
-    </section>
+      </div>
+    </nav>
+  </section>
   <main>
     <div class="container">
       <div class="row mt-5">
         <h1>Añadir Vehículo</h1>
       </div>
-      <div class="row">
+      <div class="row customH4">
         <h4>Rellene los siguientes datos para añadir su vehículo:</h4>
       </div>
 
@@ -53,22 +53,24 @@
           <div id="form-wrapper">
 
             <fieldset>
-              <table>
-                <div id="vehicle" class="selectdiv">
-                  <tr id="linea">
-                    <td colspan="4" class="customTD">
-                      <select name="make" id="formmake">
-                        <option value="" selected="selected">Marca</option></select>
-                      </td>
+              <table class="modTable">
+                <tbody class="modtBody">
+                  <div id="vehicle" class="selectdiv">
+                    <tr id="linea">
                       <td colspan="4" class="customTD">
-                        <select name="model" id="formmodel">
-                          <option value="" selected="selected">Modelo</option></select>
+                        <select name="make" id="formmake">
+                          <option value="" selected="selected">Marca</option></select>
                         </td>
                         <td colspan="4" class="customTD">
-                          <select name="charger" id="formcharger">
-                            <option value="" selected="selected">Tipo de cargador</option></select>
+                          <select name="model" id="formmodel">
+                            <option value="" selected="selected">Modelo</option></select>
                           </td>
-                        </tr>
+                          <td colspan="4" class="customTD">
+                            <select name="charger" id="formcharger">
+                              <option value="" selected="selected">Tipo de cargador</option></select>
+                            </td>
+                          </tr>
+                        </tbody>
                       </table>
                     </fieldset>
                   </div>
