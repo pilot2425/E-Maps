@@ -437,6 +437,11 @@ h5
 
 .sepCustom1{
   padding-top: 25px !important;
+  column-gap: 20px;
+  display: -webkit-box;
+}
+.noBorder{
+  border: none;
 }
 .customTD {
   text-align: center !important;
