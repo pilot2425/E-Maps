@@ -98,6 +98,16 @@ h1 {
 	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
+h3
+{
+  padding-left: 50px;
+}
+
+h3, h4
+{
+  margin-top: 10px;  
+}
+
 li {
 	font-size: 20px;
 	font-weight: bold;
@@ -201,7 +211,9 @@ h5 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 16px;
-	padding: 8px 16px;
+	padding-top: 8px; 
+  padding-bottom: 8px;
+  padding-left: 40px;
 	border: none;
 	width: 180px;
 	height: 50px;
@@ -210,6 +222,19 @@ h5 {
 
 .mostrar {
 	margin-top: 0px;
+}
+
+#turnos
+{
+  background-color: #fff;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.persona
+{
+  margin-top: 10px;
 }
 
 .navbar {
@@ -246,37 +271,6 @@ h5 {
 	width: max-content;
 	/* Para que quepa todo el contenido en una linea*/
 }
-
-/* FORMULARIO DE CONTACTO*/
-.row button {
-	background-color: #ffffff !important;
-	color: rgb(7, 7, 7) !important;
-	border-color: #b3fcac;
-}
-
-/* Cambiar el color del boton de envio */
-.formPlanificar {
-	margin-top: 30px !important;
-	border: 1px solid #fdfdfd;
-}
-
-#formulario {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	text-align: justify;
-}
-
-.form-label {
-	margin-top: 1%;
-	font-size: x-large;
-}
-
-#boton {
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
-
 
 
 
