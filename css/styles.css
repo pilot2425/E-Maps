@@ -366,6 +366,10 @@ h5
 
 .sepCustom1{
   padding-top: 25px !important;
+  display: -webkit-box;
+}
+.noBorder{
+  border: none;
 }
 .customTD {
   text-align: center !important;
