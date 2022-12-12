@@ -47,6 +47,15 @@
                   <li><a class="dropdown-item" href="interfaces/verGaraje.html">Ver Garaje</a></li>
                 </ul>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <p>Hola, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>!</p>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="interfaces/logout.php">Cerrar Sesión</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
 
