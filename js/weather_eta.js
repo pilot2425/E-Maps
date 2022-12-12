@@ -1,32 +1,36 @@
 const weatherIcons = [
-    "<i class=" + '"' + "fa-solid fa-cloud-bolt weather_icon" + '"' + "></i>",            // Storm
-    "<i class=" + '"' + "fa-solid fa-cloud-rain weather_icon" + '"' + "></i>",            // Light rain
-    "<i class=" + '"' + "fa-solid fa-cloud-showers-heavy weather_icon" + '"' + "></i>",   // Heavy rain
-    "<i class=" + '"' + "fa-solid fa-cloud weather_icon" + '"' + "></i>",                 // Cloudy
-    "<i class=" + '"' + "fa-solid fa-cloud-sun-rain weather_icon" + '"' + "></i>",        // Rain with sun
-    "<i class=" + '"' + "fa-solid fa-smog weather_icon" + '"' + "></i>",                  // Smog
-    "<i class=" + '"' + "fa-solid fa-snowflake weather_icon" + '"' + "></i>",             // Snow
-    "<i class=" + '"' + "fa-solid fa-sun weather_icon" + '"' + "></i>",                   // Sunny
+    "<i class=" + '"' + "fa-solid fa-cloud-bolt" + '"' + "></i>",            // Storm
+    "<i class=" + '"' + "fa-solid fa-cloud-rain" + '"' + "></i>",            // Light rain
+    "<i class=" + '"' + "fa-solid fa-cloud-showers-heavy" + '"' + "></i>",   // Heavy rain
+    "<i class=" + '"' + "fa-solid fa-cloud" + '"' + "></i>",                 // Cloudy
+    "<i class=" + '"' + "fa-solid fa-cloud-sun-rain" + '"' + "></i>",        // Rain with sun
+    "<i class=" + '"' + "fa-solid fa-smog" + '"' + "></i>",                  // Smog
+    "<i class=" + '"' + "fa-solid fa-snowflake" + '"' + "></i>",             // Snow
+    "<i class=" + '"' + "fa-solid fa-sun" + '"' + "></i>",                   // Sunny
 ];
 const weights = [3, 35, 25, 70, 15, 6, 1, 75];
 let randomTemp = randInterval(10, 25);
 let timer = 3670, hours, minutes, seconds;
+let range = 200;
 
 document.getElementById("wheather-icon").innerHTML = weatherIcons[7];
 document.getElementById("temperature").innerHTML = randomTemp + " ºC";
 
 const interval = setInterval(function() {
-    if (randInterval(0, 4) > 3){
+    if (randInterval(0, 4) > 0){
         let randomWeather = randInterval(1, 230);
         let position = 0;
         let acummulatedWeight = 0;
 
         while (acummulatedWeight < randomWeather){
-            position++;
             acummulatedWeight += weights[position];
+            if (acummulatedWeight < randomWeather){
+                position++;
+            }
         }
 
         document.getElementById("wheather-icon").innerHTML = weatherIcons[position];
+        console.log(position + " -- " + weatherIcons[position]);
     } else {
         // console.log("Stay-Weather");
     }
@@ -67,6 +71,7 @@ const interval = setInterval(function() {
         timer = 0;
     }
 
+    document.getElementById("range").innerHTML = range-- + " km";
 	return;
 }, 1000);
 
