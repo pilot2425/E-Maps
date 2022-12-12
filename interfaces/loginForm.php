@@ -23,10 +23,11 @@ include('server.php');
 <body>
 	<div class="main">  	
 		<input type="checkbox" id="chk" aria-hidden="true">
-
+            
 			<div class="signup">
 				<form method="post" action="loginForm.php">
 					<label for="chk" aria-hidden="true">Registro</label>
+					<div class="error"><?php include('errors.php'); ?> </div>
 					<input type="text" name="username_register" placeholder="User name" required="">
 					<input type="email" name="email_register" placeholder="Email" required="">
 					<input type="password" name="password_register" placeholder="Password" required="">
@@ -37,6 +38,7 @@ include('server.php');
 			<div class="login">
 				<form method="post" action="loginForm.php">
 					<label for="chk" aria-hidden="true">Login</label>
+					<div class="error"><?php include('errors.php'); ?> </div>
 					<input type="username" name="username_input" placeholder="Username" required="">
 					<input type="password" name="password_input" placeholder="Password" required="">
 					<button type="submit" name="log_in_user">Iniciar Sesión</button>
