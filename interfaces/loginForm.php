@@ -1,7 +1,10 @@
 <?php
 session_start();
 
-
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    header("location: ../index.php");
+    exit;
+}
 include('server.php'); 
 ?>
 <!DOCTYPE html>
@@ -22,21 +25,21 @@ include('server.php');
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="signup">
-				<form class="formulario">
-					<label for="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="txt" placeholder="User name" required="">
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Sign up</button>
+				<form method="post" action="loginForm.php">
+					<label for="chk" aria-hidden="true">Registro</label>
+					<input type="text" name="username_register" placeholder="User name" required="">
+					<input type="email" name="email_register" placeholder="Email" required="">
+					<input type="password" name="password_register" placeholder="Password" required="">
+					<button type="submit" name="create_new_user">Registrarse</button>
 				</form>
 			</div>
 
 			<div class="login">
-				<form class="formulario">
+				<form method="post" action="loginForm.php">
 					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Login</button>
+					<input type="username" name="username_input" placeholder="Username" required="">
+					<input type="password" name="password_input" placeholder="Password" required="">
+					<button type="submit" name="log_in_user">Iniciar Sesión</button>
 				</form>
 			</div>
 	</div>
