@@ -22,35 +22,48 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto ">
-              <li class="nav-item"><a class="nav-link active " aria-current="page" href="index.php">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link " aria-current="page"
-                  href="interfaces/MostrarCargadores.html">Mostrar Cargadores</a></li>
-              <li class="nav-item"><a class="nav-link " aria-current="page"
-                  href="interfaces/planificarRuta.html">Planificar Ruta</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Garaje
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="interfaces/anadirVehiculo.html">Añadir</a></li>
-                  <li><a class="dropdown-item" href="interfaces/modificarVehiculo.html">Modificar</a></li>
-                  <li><a class="dropdown-item" href="interfaces/verGaraje.html">Ver Garaje</a></li>
-                </ul>
+						<ul class="navbar-nav ml-auto ">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="../index.php">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page"href="../interfaces/MostrarCargadores.html">Mostrar Cargadores</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="../interfaces/planificarRuta.html">Planificar Ruta</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Garaje
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li>
+										<a class="dropdown-item" href="../interfaces/anadirVehiculo.html">Añadir</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="../interfaces/modificarVehiculo.html">Modificar</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="../interfaces/verGaraje.html">Ver Garaje</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+                <a class="nav-link active" aria-current="page"href="../formulario.php">Contacto</a>
               </li>
-              <li class="nav-item"><a class="nav-link " aria-current="page"
-                  href="formulario.php">Contacto</a></li>
-            </ul>
-          </div>
+						</ul>
+					</div>
           <span class="navbar-brand sml">
             <img src="img/logo.jpg">
         </span>
         </div>
       </nav>
     </section>
-      <p class = "formularioContacto">Si desea ponerse en contacto con nosotros, por favor rellene el siguiente formulario</p>
-    
+
+    <div class="container-fluid" id="espacio"></div>
+
+    <p class = "formularioContacto">Si desea ponerse en contacto con nosotros, por favor rellene el siguiente formulario</p>
+
     <form action = "send.php" method= "post" class="row g-3 needs-validation" novalidate>
       <div class="col-lg-4">
         <label for="nombre" class="form-label">Nombre y apellidos</label>
@@ -92,7 +105,7 @@
         </div>
       </div>
       <div class="col-lg-4">
-        <button class="btn botonContacto" type="submit" >Enviar</button>
+        <button class="submit-btn botonContacto" type="submit" >Enviar</button>
       </div>
     </form>
   
