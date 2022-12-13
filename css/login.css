@@ -8,6 +8,10 @@ body{
 	font-family: 'Jost', sans-serif;
 	background: #a0e9a0;
 }
+.error{
+    margin: auto;
+    text-align: center;
+}
 .main{
 	width: 350px;
 	height: 500px;
