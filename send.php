@@ -1,17 +1,15 @@
 <?php 
 	$nombre = $_POST['nombre'];
-	$asunto = $_POST['asunto'];
-	$correo = $_POST['correo'];
+    $asunto = $_POST['asunto'];
+    $correo = $_POST['correo'];
     $mensaje = $_POST['mensaje'];
-	$destino = "support@emaps.es";
-	$headers = "De  ".$nombre ." con correo de contacto: " .$correo;
-	
-	echo $nombre. " con el correo electronico " . $correo. " quiere contactar con el motivo de  " .$asunto .<br>;
-	if(mail($destino, $asunto, $mensaje, $headers)){
-		echo "Correo enviado correctamente";
-	}else{
-		echo "Error al enviar el mensaje";
-	}
+    $destino = "support@emaps.es";
+    $headers = "De  ".$nombre ." con correo de contacto: " .$correo;
+
+    
+   
+    mail($destino,$asunto,$mensaje);
+    
 
 ?>
 
