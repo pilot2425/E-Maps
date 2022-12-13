@@ -6,8 +6,7 @@
 	$destino = "support@emaps.es";
 	$headers = "De  ".$nombre ." con correo de contacto: " .$correo;
 	
-	echo $nombre. " con el correo electronico " . $correo. " quiere contactar con el motivo de  " .$asunto;
-	
+	echo $nombre. " con el correo electronico " . $correo. " quiere contactar con el motivo de  " .$asunto .<br>;
 	if(mail($destino, $asunto, $mensaje, $headers)){
 		echo "Correo enviado correctamente";
 	}else{
