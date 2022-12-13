@@ -23,9 +23,6 @@
   <body>
     <section class="mostrar">
       <nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar">
-        <span class="navbar-brand sml">
-          <img src="img/logo.jpg">
-        </span>
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -61,7 +58,9 @@
               </li>
             </ul>
           </div>
-
+          <span class="navbar-brand sml">
+            <img src="img/logo.jpg">
+        </span>
         </div>
       </nav>
     </section>
