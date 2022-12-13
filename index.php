@@ -47,6 +47,8 @@
                   <li><a class="dropdown-item" href="interfaces/verGaraje.html">Ver Garaje</a></li>
                 </ul>
               </li>
+              <li class="nav-item"><a class="nav-link " aria-current="page"
+                  href="formulario.php">Contacto</a></li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">

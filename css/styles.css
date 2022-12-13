@@ -380,6 +380,10 @@ h5 {
 	}
 
 	/*Añadir/Modificar vehículo*/
+
+	.formularioContacto{
+		font-size: large;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -507,3 +511,11 @@ h5 {
 }
 
 /*Añadir/Modificar vehiculo*/
+
+.botonContacto {
+	color: white;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
+}
+.formularioContacto{
+	margin-top: 2%;
+}

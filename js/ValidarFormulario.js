@@ -18,20 +18,3 @@
       }, false)
     })
 })()
-
-// PROTECCION DEL EMAIL Y TELEFONO DE CONTACTO
-// Las codificamos para evitar spam, para ello dividimos el correo o número telefónico del destinatario en varias variables
-// estas se ejecutaran solo si el cliente desea contactar y pincha en los logos correspondientes
-function mandaemail(){
-    usuario="bmcontactoweb";
-    correo="gmail.com";
-    dest="mailto:"+usuario+"@"+correo;
-    location.href=dest;
-}
-function llamar(){
-    digitos1="665";
-    digitos2="736";
-    digitos3 = "224";
-    dest="tel:"+ digitos1 + digitos2 + digitos3;
-    location.href=dest;
-}
