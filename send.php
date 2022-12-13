@@ -37,7 +37,7 @@
 					<nav aria-label="...">
 							<ul class="pagination">
 								<li class="page-item">
-									<a class = page-link href = "index.html"><i class="fa fa-fw fa-home"></i></a>
+									<a class = page-link href = "index.php"><i class="fa fa-fw fa-home"></i></a>
 								</li>
 						</ul>
 					</nav>
