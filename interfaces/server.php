@@ -59,7 +59,8 @@ if(isset($_POST['create_new_user'])){
 	$result=mysqli_query($db,$user_check_query);
 	$user=mysqli_fetch_assoc($result);
 	if($user){ //Si existe el usuario
-	    if($user['username']===$username){
+	
+	    if($user['usuario']===$username){
 	        array_push($errors,"El nombre de usuario ya existe");
 	    }
 	    if($user['email']===$email){
