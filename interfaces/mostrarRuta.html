@@ -75,21 +75,9 @@
   				</div>
   			</div>
         <div id="map" style="height:50vh"></div>
-        <script src=" https://maps.googleapis.com/maps/api/js?key=AIzaSyAHW-PhDwU4K31pIrRCXF1QVx-2MtFCZDA"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHW-PhDwU4K31pIrRCXF1QVx-2MtFCZDA"></script>
         <script src="../js/calcularRuta.js"></script>
-        <script type="text/javascript">
-          $(document).ready(function () {
-            $('#mapForm').submit(function () {
-              var valueOrigin = $(".origin").val();
-              var valueDestination = $(".destination").val();
-              //var valueWaypointCount = Number($(".waypointCount").val());
-              console.log();
-              GenerateMapCall(valueOrigin, valueDestination);
-              return false;
-            });
-          });
-        </script>
-
+      
         <!-- Enlace al JavaScript de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"

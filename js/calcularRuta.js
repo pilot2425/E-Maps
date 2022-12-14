@@ -4,9 +4,9 @@ let waypointCountMain = 3;
 
 GenerateMap(originInputMain, destinationInputMain, waypointCountMain);
 
-function GenerateMapCall (originInputMain, destinationInputMain){
-	GenerateMap(originInputMain, destinationInputMain, 3);
-}
+// function GenerateMapCall (originInputMain, destinationInputMain){
+//	GenerateMap(originInputMain, destinationInputMain, 3);
+//}
 
 function GenerateMap(originInput, destinationInput, waypointCountInput) {
 	if (waypointCountInput > 25) {
