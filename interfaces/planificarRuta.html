@@ -8,7 +8,7 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
 			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 		<link rel="stylesheet" href="../css/styles.css">
-		<script src="https://kit.fontawesome.com/790c369e9a.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 		<title>Planificar Ruta</title>
 	</head>
 
@@ -63,17 +63,17 @@
 		</header>
 		<main>
 			<div class="container-fluid" id="espacio"></div>
-			
+
 			<div class="container-fluid">
 				<div class="row">
 					<section class="formulario">
-						<h1 class="title">planificar ruta</h1>
-						<form class="contact-form row formPlanificar" action="GestionDeTurnos.html">
+						<h1 class="title">Planificar ruta</h1>
+						<form class="contact-form row formPlanificar" action="mostrarRuta.html" id="mapForm">
 							<div class="form-field col-lg-6">
-								<input class="input-text js-input" type="text" placeholder="Inicio" required>
+								<input class="input-text js-input origin" type="text" required="required" placeholder="Inicio" pattern="[a-zA-Z\s]+">
 							</div>
 							<div class="form-field col-lg-6">
-								<input class="input-text js-input" type="text" placeholder="Destino" required>
+								<input class="input-text js-input destination" type="text" required="required" placeholder="Destino" pattern="[a-zA-Z\s]+">
 							</div>
 							<div class="form-field col-lg-12">
 								<input class="submit-btn calcular" type="submit" value="Calcular">
@@ -82,22 +82,19 @@
 					</section>
 				</div>
 			</div>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="form-field col-1" id="wheather-icon"></div>
-					<div class="form-field col-3" id="temperature"></div>
-					<div class="form-field col-1"><i class="fa-solid fa-bolt"></i></div>
-					<div class="form-field col-3" id="range"></div>
-					<div class="form-field col-1"><i class="fa-solid fa-clock"></i></div>
-					<div class="form-field col-3" id="timer"></div>
-				</div>
-				<i class="fa-solid fa-cloud-rain"></i>
-			</div>
+			<script type="text/javascript">
+			$(document).ready(function () {
+				$('#mapForm').submit(function () {
+					localStorage.setItem('origin', $(".origin").val());
+					localStorage.setItem('destination', $(".destination").val());
+					return true;
+				});
+			});
+			</script>
 		</main>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
 			crossorigin="anonymous"></script>
-		<script type="text/javascript" src="../js/weather_eta.js"></script>
 	</body>
 
 </html>

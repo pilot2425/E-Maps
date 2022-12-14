@@ -30,14 +30,13 @@ const interval = setInterval(function() {
         }
 
         document.getElementById("wheather-icon").innerHTML = weatherIcons[position];
-        console.log(position + " -- " + weatherIcons[position]);
     } else {
         // console.log("Stay-Weather");
     }
 
     if (randInterval(0, 4) > 3){
         let increment = 0;
-        
+
         if (randInterval(0,1) == 0) {
             increment = -1;
         } else {
@@ -60,13 +59,13 @@ const interval = setInterval(function() {
 	tempTimer = timer - hours * 3600
     minutes = parseInt(tempTimer / 60, 10);
     seconds = parseInt(tempTimer % 60, 10);
-    
+
     hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
-			
+
     document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds;
-    
+
     if (--timer < 0) {
         timer = 0;
     }
@@ -79,6 +78,3 @@ const interval = setInterval(function() {
 function randInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
-
-
-
