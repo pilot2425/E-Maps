@@ -39,6 +39,16 @@
                   <li><a class="dropdown-item" href="verGaraje.html">Ver Garaje</a></li>
                 </ul>
               </li>
+              <li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<p id="UsernameNav"></p>
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li>
+										<a class="dropdown-item" href="../interfaces/logout.php">Cerrar Sesión</a>
+									</li>
+								</ul>
+							</li>
               <li class="nav-item"><a class="nav-link active" aria-current="page"
                   href="formulario.php">Contacto</a></li>
             </ul>
@@ -98,7 +108,12 @@
         <button class="submit-btn botonContacto" type="submit" >Enviar</button>
       </div>
     </form>
-  
+  	<!-- Almacenamiento en local del nombre de usuario -->
+    <script>
+	      window.onload = function(){
+	          document.getElementById('UsernameNav').innerHTML = localStorage.getItem('nombre_usuario');
+	      }
+	  </script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"></script>

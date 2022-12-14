@@ -19,6 +19,7 @@
 		<title>E-maps</title>
 	</head>
 	<body>
+	    
 		<section class="mostrar">
 			<nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar">
 				<div class="container-fluid">
@@ -57,7 +58,7 @@
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									<p>Hola, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>!</p>
+									<p id="UsernameNav"></p>
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 									<li>
@@ -134,7 +135,13 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- Almacenamiento en local del nombre de usuario -->
+        <script>
+	        window.onload = function(){
+	            localStorage.setItem('nombre_usuario',"<?php echo htmlspecialchars($_SESSION["username"]); ?>");
+	            document.getElementById('UsernameNav').innerHTML = localStorage.getItem('nombre_usuario');
+	        }
+	    </script>
 		<!-- Enlace al JavaScript de Bootstrap -->
 		<script src="js/Index-jquery-3.3.1.min.js"></script>
 		<script src="js/Index-Indexpopper.min.js"></script>
