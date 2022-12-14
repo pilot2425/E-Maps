@@ -28,7 +28,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto ">
 							<li class="nav-item">
-								<a class="nav-link active " aria-current="page" href="index.html">Inicio</a>
+								<a class="nav-link active " aria-current="page" href="index.php">Inicio</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link " aria-current="page" href="interfaces/MostrarCargadores.html">Mostrar Cargadores</a>
