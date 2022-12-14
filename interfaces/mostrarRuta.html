@@ -51,8 +51,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									<p id="UsernameNav"></p>
+								<a class="nav-link dropdown-toggle" href="#" id="UserMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 									<li>
@@ -88,7 +87,7 @@
         <!-- Almacenamiento en local del nombre de usuario -->
         <script>
 	        window.onload = function(){
-	            document.getElementById('UsernameNav').innerHTML = localStorage.getItem('nombre_usuario');
+	            document.getElementById('UserMenu').innerHTML = localStorage.getItem('nombre_usuario');
 	        }
 	    </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHW-PhDwU4K31pIrRCXF1QVx-2MtFCZDA"></script>

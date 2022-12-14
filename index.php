@@ -57,12 +57,11 @@
 								<a class="nav-link " aria-current="page" href="interfaces/formulario.php">Contacto</a>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									<p id="UsernameNav"></p>
+								<a class="nav-link dropdown-toggle" href="#" id="UserMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								</a>
 								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 									<li>
-										<a class="dropdown-item" href="interfaces/logout.php">Cerrar Sesión</a>
+										<a class="dropdown-item" href="../interfaces/logout.php">Cerrar Sesión</a>
 									</li>
 								</ul>
 							</li>
@@ -139,7 +138,7 @@
         <script>
 	        window.onload = function(){
 	            localStorage.setItem('nombre_usuario',"<?php echo htmlspecialchars($_SESSION["username"]); ?>");
-	            document.getElementById('UsernameNav').innerHTML = localStorage.getItem('nombre_usuario');
+	            document.getElementById('UserMenu').innerHTML = localStorage.getItem('nombre_usuario');
 	        }
 	    </script>
 		<!-- Enlace al JavaScript de Bootstrap -->
