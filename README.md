@@ -1,2 +1,4 @@
 # E-Maps
 E-maps project
+
+ Nuestra web está orientada a usuarios que tengan un coche eléctrico o híbrido. Somos un equipo que tiene como objetivo proponer la mejor herramienta web para los clientes que usen dichos coches. También buscamos una transición de coches de combustión a coches eco sostenibles para mejorar el medio ambiente y por ende reducir las emisiones de CO2 y el nivel de ruido en nuestras ciudades. Por ello trabajamos en está web que te permite poner una ruta y automáticamente te dice donde debes parar para cargar la batería, el tiempo de espera que hay en los puntos de recarga, la meteorología en cada momento, la autonomía... y muchas cosas más.
