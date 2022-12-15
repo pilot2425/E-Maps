@@ -95,6 +95,11 @@ h1 {
 	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
+h2
+{
+	font-weight: bolder;
+}
+
 h3
 {
   padding-left: 50px;
@@ -159,11 +164,10 @@ h5 {
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	font-size: 2.3em;
+	font-size: 2.6em;
 	font-weight: bold;
 	line-height: 48px;
 	background: #2cd41d;
-
 	background: -moz-linear-gradient(left, #2cd41d 0%, #28850b 100%) !important;
 	background: -webkit-linear-gradient(left, #2cd41d 0%, #28850b 100%) !important;
 	background: linear-gradient(to right, #2cd41d 0%, #28850b 100%) !important;
@@ -215,12 +219,36 @@ h5 {
 	margin-top: 0px;
 }
 
-#turnos
+#turnos, .puesto1, .puesto2, .puesto3, .puesto4
 {
-  background-color: #fff;
   height: 50px;
   border-radius: 10px;
   margin-top: 15px;
+}
+
+#turnos
+{
+	background-color: #ffffff;
+}
+
+.puesto1
+{
+	background-color: #4bc12d;
+}
+
+.puesto2
+{
+	background-color: #dced1d;
+}
+
+.puesto3
+{
+	background-color: #f3a62b;
+}
+
+.puesto4
+{
+	background-color: #dc2626;
 }
 
 .persona

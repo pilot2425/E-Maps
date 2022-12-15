@@ -73,14 +73,14 @@
 <div class="container-fluid" id="espacio"></div>
 <h1 class="title">Ruta</h1>
 <div class="container-fluid" id="espacio"></div>
-<div class="container-fluid">
+<div class="container-fluid bg-light">
   <div class="row justify-content-center">
     <div class="form-field col-1" id="wheather-icon"></div>
     <div class="form-field col-3" id="temperature"></div>
     <div class="form-field col-1"><i class="fa-solid fa-bolt"></i></div>
     <div class="form-field col-3" id="range"></div>
     <div class="form-field col-1"><i class="fa-solid fa-clock"></i></div>
-    <div class="form-field col-1" id="timer"></div>
+    <div class="form-field col-3" id="timer"></div>
   </div>
 </div>
 <div id="map" style="height:50vh"></div>
@@ -100,5 +100,13 @@ crossorigin="anonymous"></script>
 <script type="text/javascript" src="../js/weather_eta.js"></script>
 <!-- Enlace al JavaScript de Font Awesome -->
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+<div class="container-fluid" id="espacio"></div>
+
+<form action="GestionDeTurnos.html">
+	<div class="form-field col-lg-12">
+		<input class="submit-btn calcular" type="submit" value="Esperas">
+	</div>
+</form>
 </body>
 </html>
