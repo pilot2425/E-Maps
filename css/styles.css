@@ -164,12 +164,13 @@ h5 {
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link, .nav-item.dropdown .dropdown-menu .dropdown-item.active {
 	color: #28850b;
-	background-color: #ffffff;
+	background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
 }
 
 .nav-item.dropdown .dropdown-menu 
 {
-	border-color: #fff;
+	border-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+	background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
 }
 
 a{
