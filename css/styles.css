@@ -336,6 +336,14 @@ h5 {
 		width: 100%;
 	}
 
+	.navbar-light .navbar-nav .nav-link {
+		color: #3534348c;
+	}
+
+	.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+		color: #000000e6;
+	}
+
 	h4 {
 		font-size: large !important;
 	}
