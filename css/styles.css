@@ -156,7 +156,30 @@ h5 {
 	max-width: 800px;
 	margin: 50px auto;
 	position: relative;
+}
 
+.navbar-light .navbar-nav .nav-link, .nav-item.dropdown .dropdown-menu .dropdown-item{
+	color: #3534348c;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link, .nav-item.dropdown .dropdown-menu .dropdown-item.active {
+	color: #28850b;
+	background-color: #ffffff;
+}
+
+.nav-item.dropdown .dropdown-menu 
+{
+	border-color: #fff;
+}
+
+a{
+	color: #28850b;
+	text-decoration: none;
+}
+
+.ruta
+{
+	margin-left: 15px;
 }
 
 .title {
@@ -335,15 +358,6 @@ h5 {
 	.nav-item {
 		width: 100%;
 	}
-
-	.navbar-light .navbar-nav .nav-link {
-		color: #3534348c;
-	}
-
-	.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-		color: #000000e6;
-	}
-
 	h4 {
 		font-size: large !important;
 	}
