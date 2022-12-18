@@ -2,7 +2,6 @@ var cars = new Array();
 var chargers = new Array();
 cars["Aston Martin"] = new Array("Rapid E");
 cars["Audi"] = new Array("A3", "e-tron", "Q5", "Q7 e-tron Quattro");
-cars["Austin"] = new Array("Coupe", "FX3", "FX4", "Moke");
 cars["BMW"] = new Array("225xe", "330e", "530e", "740e", "745e", "i3", "i8", "X1", "X5");
 cars["Chevrolet"] = new Array("Bolt", "Malibu", "Volt");
 cars["Citroen"] = new Array("Berlingo Electric", "C-Zero", "C5 Aircross Hybrid", "E-Mehari");
